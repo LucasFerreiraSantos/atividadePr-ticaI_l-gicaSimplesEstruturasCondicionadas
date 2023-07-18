@@ -56,9 +56,38 @@ let numero2 = 12
     }
 
 // Exercício IX
+let macas = 9
+    if(macas > 12) {
+        let valorMacas = 0.25
+        let resultado = macas * valorMacas
+        document.write(`Foram compradas mais de 1 dúzia, por isso o valor total é de R$${resultado.toFixed(2)}.<br><br>`)
+    } else {
+        let valorMacas = 0.30
+        let resultado = macas * valorMacas
+        document.write(`Foram compradas menos de 1 dúzia. Portanto, o valor total é de R$${resultado.toFixed(2)}.<br><br>`)
+    }
 
 // Exercício X
+let nomeUsuario = 'Lucas Ferreira'
+let idadeUsuário = 25
+let anoNascimento = 2023 - idadeUsuário
+document.write(`O nome do usuário é ${nomeUsuario}, sua idade é de ${idadeUsuário} anos, com isso, ele nasceu no ano ${anoNascimento}.<br><br>`)
 
 // Exercício XI
+let numInteiro = 10
+    if(numInteiro % 2 === 0) {
+        document.write(`Número de entrada é ${numInteiro}. O número é par!<br><br>`)
+    } else {
+        document.write(`Número de entrada é ${numInteiro}. O número é ímpar!<br><br>`)
+    }
 
 // Exercício XII
+let nomeEleitor = 'Lucas Ferreira'
+let anoAtual = 2023
+let anoNascido = 1998
+let idadeEleitor = anoAtual - anoNascido
+    if(idadeEleitor >= 16) {
+        document.write(`O cidadão ${nomeEleitor} poderá votar neste ano.`)
+    } else {
+        document.write(`O cidadão ${nomeEleitor}, não poderá votar neste ano.`)
+    }
